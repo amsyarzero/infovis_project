@@ -19,8 +19,8 @@
 
 ## Graphs
 1. Grouped bar chart, mini pie charts
-  - Bar chart: `M/F` vs. amount of patients, grouped by `Group`
-  - Pie charts: Percentage of `M/F` against amount of patients, separated by `Group`
+    - Bar chart: `M/F` vs. amount of patients, grouped by `Group`
+    - Pie charts: Percentage of `M/F` against amount of patients, separated by `Group`
 
 ## Dataset variables overview
 | Term | Meaning | Variable type | Value |
