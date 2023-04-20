@@ -1,8 +1,5 @@
 # Information Visualisation Project
 
-## Deadline
-**Thursday, 20/4/2023**
-
 ## Tasks
 - [ ] Review dataset
 - [ ] Generate 4 - 5 hypotheses
@@ -10,7 +7,7 @@
 - [ ] Write R code
 - [ ] Write report
 - [ ] Record video
-- [ ] Submit before 5 PM
+- [ ] Submit
 
 ## Name
 - [Report](https://docs.google.com/document/d/1_bCFwLMUsr4_0gIWAK7IcDgJnPzRSl2dSOpRh_5fFsM/edit?usp=sharing): `20208039_Mohd-Razali_Muhammad-Danial-Amsyar_report.pdf`
