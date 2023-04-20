@@ -1,7 +1,7 @@
 # Information Visualisation Project
 
 ## Tasks
-- [ ] Review dataset
+- [x] Review dataset
 - [ ] Generate 4 - 5 hypotheses
 - [ ] Generate appropriate graphs
 - [ ] Write R code
@@ -15,10 +15,11 @@
 - Video: `20208039_Mohd-Razali_Muhammad-Danial-Amsyar_video.mp4`
 
 ## Hypotheses
-(insert hypotheses here)
+1. Do males have more amount of patients afflicted with Alzheimer's than females?
 
 ## Graphs
-(insert graphs here)
+1. Bar chart
+> M/F vs. Group
 
 ## Dataset variables overview
 | Term | Meaning | Variable type | Value |
