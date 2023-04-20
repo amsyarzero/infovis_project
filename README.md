@@ -26,7 +26,7 @@
 | Term | Meaning | Variable type | Value |
 | --- | --- | --- | --- |
 | Group | Patient group | Nominal | Demented/nondemented |
-| M/F | Patient sex | Nominal | M/F |
+| M/F | Patient gender | Nominal | M/F |
 | Age | Patient age | Ratio | Age |
 | EDUC | Years of education | Ratio | Year |
 | SES | Socioeconomic status | Ratio | 1 (low) - 5 (high) |
