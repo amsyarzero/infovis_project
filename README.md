@@ -18,14 +18,15 @@
 1. Do males have more amount of patients afflicted with Alzheimer's than females?
 
 ## Graphs
-1. Grouped bar chart
-> M/F vs. Group
+1. Grouped bar chart, mini pie charts
+    - Bar chart: `M/F` vs. amount of patients, grouped by `Group`
+    - Pie charts: Percentage of `M/F` against amount of patients, separated by `Group`
 
 ## Dataset variables overview
 | Term | Meaning | Variable type | Value |
 | --- | --- | --- | --- |
 | Group | Patient group | Nominal | Demented/nondemented |
-| M/F | Patient sex | Nominal | M/F |
+| M/F | Patient gender | Nominal | M/F |
 | Age | Patient age | Ratio | Age |
 | EDUC | Years of education | Ratio | Year |
 | SES | Socioeconomic status | Ratio | 1 (low) - 5 (high) |
