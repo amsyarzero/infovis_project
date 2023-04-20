@@ -10,18 +10,23 @@ alzheimer <- read_csv("./www/alzheimer.csv")
 removeConverted <- subset(alzheimer, Group != "Converted", select = c("Group", "M/F"))
 
 # create variables
-gender <- c("Male", "Female")
 group <- c("Demented", "Nondemented")
 
 maleDemented <- nrow(removeConverted[removeConverted$`M/F` == "M" & removeConverted$Group == "Demented", ])
 maleNondemented <- nrow(removeConverted[removeConverted$`M/F` == "M" & removeConverted$Group != "Demented", ])
-femaleDemented <- nrow(removeConverted[removeConverted$`M/F` != "M" & removeConverted$Group == "Demented", ])
-femaleNondemented <- nrow(removeConverted[removeConverted$`M/F` != "M" & removeConverted$Group != "Demented", ])
 
 maleCount <- c(maleDemented, maleNondemented)
-femaleCount <- c(femaleDemented, femaleNondemented)
+maleVsGroup <- data.frame(group, maleCount)
 
-maleGenderVsGroup <- data.frame(gender, group, maleCount)
-femaleGenderVsGroup <- data.frame(gender, group, femaleCount)
+# compute fractions/percentages
+maleVsGroup$fraction = maleVsGroup$maleCount / sum(maleVsGroup$maleCount)
 
-# compute fraction
+# make pie chart
+maleVsGroup %>% group_by(group)
+
+pieMaleVsGroup <- maleVsGroup %>% plot_ly(labels = ~group, values = ~fraction, type = 'pie')
+pieMaleVsGroup <- pieMaleVsGroup %>% layout(title = "Percentages of Male Demented and Nondemented Patients",
+                                            xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                                            yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+pieMaleVsGroup
