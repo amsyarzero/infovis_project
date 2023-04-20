@@ -23,7 +23,14 @@ sexVsGroupCount <- data.frame(sex, group, groupCount)
 
 # create grouped bar chart
 barSexVsGroup <- ggplot(sexVsGroupCount, aes(fill = group, x = sex, y = groupCount)) +
-  geom_bar(position = 'dodge', stat = 'identity')
+  geom_bar(position = 'dodge', stat = 'identity') +
+
+  # stylise graph
+  theme_calc() +
+  labs(title = "Sex vs. Amount of Demented and Nondemented Patients", fill = "Condition") +
+  theme(plot.title = element_text(hjust = 0.5), axis.title = element_text(face = "bold")) +
+  xlab("Sex") + 
+  ylab("Amount of patients")
 
 # interactive time
 ggplotly(barSexVsGroup)
