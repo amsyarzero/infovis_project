@@ -8,9 +8,3 @@ importLibrary <- function() {
   library(dplyr)
   library(readr)
 }
-
-# import and view dataset
-importDataset <- function() {
-  alzheimer <- read_csv("./www/alzheimer.csv")
-  View(alzheimer)
-}
