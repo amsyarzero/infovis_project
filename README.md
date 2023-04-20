@@ -19,3 +19,17 @@
 
 ## Graphs
 (insert graphs here)
+
+## Dataset variables overview
+| Term | Meaning | Variable type | Value |
+| --- | --- | --- | --- |
+| Group | Patient group | Nominal | Demented/nondemented |
+| M/F | Patient sex | Nominal | M/F |
+| Age | Patient age | Ratio | Age |
+| EDUC | Years of education | Ratio | Year |
+| SES | Socioeconomic status | Ratio | 1 (low) - 5 (high) |
+| MMSE | Mini Mental State Examination | Ratio | 0 - 30 |
+| CDR | Clinical Dementia Rating | Interval | 0/0.5/1/2/3 |
+| eTIV | Estimated total intracranial volume | Ratio | Volume of void spaces in brain |
+| nWBV | Normalize whole brain volume | Interval | Volume of spaces in brain excluding void |
+| ASF | Atlas Scaling Factor | Interval | Standardized total intracranial volume |
