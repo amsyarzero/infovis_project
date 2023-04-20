@@ -11,4 +11,3 @@ getwd()
 # import and view dataset
 alzheimer <- read_csv("./www/alzheimer.csv")
 View(alzheimer)
-
