@@ -3,7 +3,3 @@
 source("./www/import.R")
 importLibrary()
 importDataset()
-
-# make a small dataset containing only M/F and total of demented/nondemented
-sexVsGroup <- aggregate(Group ~ `M/F`, data = alzheimer, FUN = sum, na.rm = TRUE)
-sexVsGroup
