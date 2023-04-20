@@ -18,8 +18,8 @@
 1. Do males have more amount of patients afflicted with Alzheimer's than females?
 
 ## Graphs
-1. Pie charts
-> M/F vs. Group, separate by sex
+1. Grouped bar chart
+> M/F vs. Group
 
 ## Dataset variables overview
 | Term | Meaning | Variable type | Value |
