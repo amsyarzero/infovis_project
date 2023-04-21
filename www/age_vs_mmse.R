@@ -6,8 +6,8 @@ importLibrary()
 # import base dataset
 alzheimer <- read_csv("./www/alzheimer.csv")
 
-# remove Converted and set to only Age vs. MMSE
-removeConverted <- subset(alzheimer, Group != "Converted", select = c("Age", "MMSE"))
+# remove Converted and Nondemented and set to only Age vs. MMSE
+removeConverted <- subset(alzheimer, Group != "Converted" & Group != "Nondemented", select = c("Group", "Age", "MMSE"))
 
 # create scatter plot
 scatterAgeVsMMSE <- ggplot(data = removeConverted, aes(x = Age, y = MMSE)) +
