@@ -33,4 +33,4 @@ barGenderVsGroup <- ggplot(genderVsGroupCount, aes(fill = group, x = gender, y =
   ylab("Amount of patients")
 
 # interactive time
-ggplotly(bargenderVsGroup)
+ggplotly(barGenderVsGroup)
