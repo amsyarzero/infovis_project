@@ -4,7 +4,6 @@ library(shiny)
 library(bslib)
 
 # import functions
-source("./www/import.R")
 source("./www/gender_vs_group.R")
 source("./www/male_vs_group.R")
 source("./www/female_vs_group.R")
