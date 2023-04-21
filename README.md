@@ -16,11 +16,14 @@
 
 ## Hypotheses
 1. Do males have more amount of patients afflicted with Alzheimer's than females?
+2. Do age, years of education, socioeconomic status, and brain volume affect dementia?
 
 ## Graphs
 1. Grouped bar chart, mini pie charts
     - Bar chart: `M/F` vs. amount of patients, grouped by `Group`
     - Pie charts: Percentage of `M/F` against amount of patients, separated by `Group`
+2. Scatter plot
+    - `Age`, `EDUC`, `SES`, `nWBV` vs. `MMSE`, `CDR`, `eTIV`
 
 ## Dataset variables overview
 | Term | Meaning | Variable type | Value |
