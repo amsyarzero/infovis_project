@@ -7,18 +7,18 @@ importLibrary()
 alzheimer <- read_csv("./www/alzheimer.csv")
 
 # remove Converted and Nondemented and set to only Age vs. MMSE
-removeConverted <- subset(alzheimer, Group != "Converted" & Group != "Nondemented", select = c("Group", "EDUC", "nWBV"))
+removeConverted <- subset(alzheimer, Group != "Converted" & Group != "Nondemented", select = c("Group", "EDUC", "eTIV"))
 
 # create scatter plot
-scatterEducVsNWBV <- ggplot(data = removeConverted, aes(x = EDUC, y = nWBV)) +
+scatterEducVsETIV <- ggplot(data = removeConverted, aes(x = EDUC, y = eTIV)) +
   geom_point(color = "#043109") +
   
   # stylise graph
   theme_calc() +
-  labs(title = "Years of Education vs. Normalized Whole Brain Volume") +
+  labs(title = "Years of Education vs. Estimated Total Intracranial Volume") +
   theme(plot.title = element_text(hjust = 0.5), axis.title = element_text(face = "bold")) +
   xlab("Year") +
-  ylab("Brain Volume")
+  ylab("Intracranial Volume")
 
 # interactive time
-ggplotly(scatterEducVsNWBV)
+ggplotly(scatterEducVsETIV)
