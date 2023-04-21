@@ -4,10 +4,10 @@
 - [x] Review dataset
 - [x] Generate 2 indepth hypotheses
 - [x] Generate appropriate graphs
-- [ ] Write R code
-- [ ] Write report
-- [ ] Record video
-- [ ] Submit
+- [x] Write R code
+- [x] Write report
+- [x] Record video
+- [x] Submit
 
 ## Name
 - [Report](https://docs.google.com/document/d/1_bCFwLMUsr4_0gIWAK7IcDgJnPzRSl2dSOpRh_5fFsM/edit?usp=sharing): `20208039_Mohd-Razali_Muhammad-Danial-Amsyar_report.pdf`
