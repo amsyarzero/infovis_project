@@ -10,7 +10,9 @@ ui <- fluidPage(
   titlePanel("Alzheimer's"),
   
   navlistPanel(
-    tabPanel("Gender studies"),
+    tabPanel("Gender in dementia",
+             h2("Gender in dementia"),
+             ),
     tabPanel("Factors in dementia"),
     tabPanel("About")
   )
