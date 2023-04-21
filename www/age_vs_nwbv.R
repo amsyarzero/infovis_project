@@ -10,7 +10,7 @@ alzheimer <- read_csv("./www/alzheimer.csv")
 removeConverted <- subset(alzheimer, Group != "Converted" & Group != "Nondemented", select = c("Group", "Age", "nWBV"))
 
 # create scatter plot
-scatterAgeVsMMSE <- ggplot(data = removeConverted, aes(x = Age, y = nWBV)) +
+scatterAgeVsNWBV <- ggplot(data = removeConverted, aes(x = Age, y = nWBV)) +
   geom_point(color = "#043109") +
   
   # stylise graph
@@ -21,4 +21,4 @@ scatterAgeVsMMSE <- ggplot(data = removeConverted, aes(x = Age, y = nWBV)) +
   ylab("Brain Volume")
 
 # interactive time
-ggplotly(scatterAgeVsMMSE)
+ggplotly(scatterAgeVsNWBV)
