@@ -2,8 +2,8 @@
 
 ## Tasks
 - [x] Review dataset
-- [ ] Generate 4 - 5 hypotheses
-- [ ] Generate appropriate graphs
+- [x] Generate 2 indepth hypotheses
+- [x] Generate appropriate graphs
 - [ ] Write R code
 - [ ] Write report
 - [ ] Record video
