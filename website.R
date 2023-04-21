@@ -65,7 +65,17 @@ ui <- navbarPage("Alzheimer's",
            tags$br(),
            plotlyOutput("factorChart")
           ),
-  tabPanel("About")
+  tabPanel("About",
+           tags$br(),
+           tags$br(),
+           tags$br(),
+           
+           div(img(src = "le-forgotten.png", height = 100), style = "text-align: center;")),
+           tags$br(),
+           tags$br(),
+  
+           span(p("Hi, I am Amsyar."), style = "text-align: center;"),
+           span(p("This is a website I created for my Information Visualisation Module."), style = "text-align: center;")
 )
 
 # Define server logic ----
