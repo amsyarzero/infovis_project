@@ -14,6 +14,8 @@ alzheimer <- read_csv("./www/alzheimer.csv")
 
 # Define UI ----
 ui <- navbarPage("Alzheimer's",
+  windowTitle = "Amogus",
+  header = tags$head(tags$link(rel = "shortcut icon", href = "./www/favicon.ico")),
   theme = bs_theme(version = 4, bootswatch = "sketchy"),
   
   tabPanel("Gender in dementia",
